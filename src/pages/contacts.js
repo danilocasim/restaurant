@@ -1,5 +1,5 @@
-export const menupage = (content) => {
+export const contactspage = (content) => {
     const title = document.createElement("h1");
-    title.textContent = "Menu";
+    title.textContent = "Contacts";
     content.appendChild(title);
 };
