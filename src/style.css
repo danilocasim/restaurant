@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("assets/fonts/playfairdisplaysc-regular-webfont.woff2")
+      format("woff2"),
+    url("assets/fonts/playfairdisplaysc-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* END OF CSS RESET */
+
+body {
+  background-image: url("./assets/images/coffee_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffebd6;
+}
+
+header {
+  background-color: #160b00c7;
+  height: 150px;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo h1 {
+  font-size: 3rem;
+  font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links button {
+  border: none;
+  background-color: transparent;
+  color: #ffebd6;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.links button:hover {
+  border-bottom: 3px solid #ffebd6;
+  transition: 0.4s;
+}
+
+main {
+  width: 100vw;
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  background-color: #160b00c7;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  width: 50vw;
+}
