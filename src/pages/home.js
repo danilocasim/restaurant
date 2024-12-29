@@ -10,27 +10,11 @@ export const homepage = (content) => {
         "It is best to start your day with a cup of coffee. Discover the best flavours coffee you will ever have. We provide the best for our customers.";
     button.textContent = "Order Now";
 
-    content.style.backgroundColor = "#160b00c7";
-    content.style.minHeight = "50vh";
-    content.style.display = "flex";
-    content.style.flexDirection = "column";
-    content.style.alignItems = "center";
-    content.style.justifyContent = "center";
-    content.style.textAlign = "center";
-    content.style.gap = "1rem";
-    content.style.width = "50vw";
-    content.style.margin = "0 auto";
-    content.style.marginTop = "100px";
+    content.classList.add("home-content");
 
-    title.style.fontSize = "3rem";
+    title.classList.add("home-title");
 
-    button.style.padding = "5px 20px";
-    button.style.border = "2px solid #ffebd6";
-    button.style.borderRadius = "20px";
-    button.style.backgroundColor = "#ffebd6";
-    button.style.color = "#160b00";
-    button.style.fontWeight = "700";
-    button.style.cursor = "pointer";
+    button.classList.add("home-btn");
 
     content.appendChild(introduction);
     content.appendChild(title);

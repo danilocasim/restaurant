@@ -68,14 +68,15 @@ h6 {
 /* END OF CSS RESET */
 
 body {
-    background-image: url("./assets/images/coffee_image.png");
+    background-image: url(./assets/images/coffee_image.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffebd6;
+    background-color: #160b00;
 }
 
 header {
-    background-color: #160b00c7;
+    background-color: #160b00;
     height: 150px;
 }
 
@@ -109,5 +110,85 @@ nav {
 
 .links button:hover {
     border-bottom: 3px solid #ffebd6;
-    transition: 0.4s;
+}
+
+.home-content {
+    background-color: #160b00bf;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100vw;
+    height: calc(100vh - 150px);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.home-title {
+    font-size: 3rem;
+}
+
+.home-btn {
+    padding: 5px 20px;
+    border: 2px solid #ffebd6;
+    border-radius: 20px;
+    background-color: #ffebd6;
+    color: #160b00;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu-brew-img {
+    height: 150px;
+    width: 150px;
+}
+
+.menu-brewBg {
+    background-color: #ffebd6;
+    border-radius: 50%;
+}
+
+.menu-title {
+    font-size: 1.1rem;
+}
+
+.menu-brewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-brewWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    place-content: space-evenly;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-content {
+    width: 100vw;
+    padding: 4rem 20vw;
+    background-color: #160b00bf;
+    min-height: 70vh;
+}
+
+.contacts-iconDetails {
+    height: 30px;
+}
+
+.contacts-detailsWrapper {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contacts-map {
+    height: 50vh;
+    width: 70vw;
 }

@@ -1,4 +1,5 @@
 import "./style.css";
+
 import { homepage, menupage, contactspage } from "./barrel.js";
 
 const content = document.querySelector("#content");
@@ -17,6 +18,7 @@ nav.addEventListener("click", (e) => {
         case "menu":
             content.textContent = "";
             menupage(content);
+
             break;
         case "contacts":
             content.textContent = "";
